@@ -9,7 +9,7 @@ Biblioteca Local é uma aplicação web construida durante o treinamento de **In
 
 
 A aplicação consiste em um site de biblioteca, onde os dados dos livros são coletados e organizados por categoria, autor, idioma e disponibilidade de 
-emprestimo ou manutenção.
+empréstimo ou manutenção.
 
 ## Layout site Admin
 ![web 1](https://github.com/Natanaelpvh/Biblioteca/blob/master/assets/admin.JPG)
