@@ -13,7 +13,7 @@ class LivroInstanceInline(admin.TabularInline):
 
 @admin.register(Livro)
 class LivroAdmin(admin.ModelAdmin):
-    list_display = ('titulo', 'autor', 'display_genero')
+    list_display = ('titulo', 'autor', 'display_genero', 'foto')
     inlines = [LivroInstanceInline]
 
 

@@ -42,11 +42,13 @@ class Livro(models.Model):
     resumo = models.TextField(max_length=1000, help_text='Insira uma breve descrição do livro')
     isbn = models.CharField('ISBN', max_length=13, help_text='13 Personagem <a href="https://www.cblservicos.org.br/isbn/">número ISBN</a>')
 
-
     genero = models.ManyToManyField(Genero, help_text='Selecione um gênero para este livro')
     # ManyToManyField usado porque o gênero pode conter muitos livros. Os livros podem abranger muitos gêneros.
     # A classe de gênero já foi definida para que possamos especificar o objeto acima.
     linguagem = models.ForeignKey('Linguagem', on_delete=models.SET_NULL, null=True)
+
+    # Foto do Livro
+    foto = models.ImageField(upload_to='images/%Y/%m/%d', blank=True, null=True, verbose_name='Foto do Livro')
 
     class Meta:
         verbose_name = "Livro"
